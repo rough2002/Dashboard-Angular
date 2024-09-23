@@ -14,7 +14,7 @@ import { CollapsibleSidebarComponent } from './core/components/collapsible-sideb
     CollapsibleSidebarComponent,
   ],
   encapsulation: ViewEncapsulation.None,
-  template: `<div class="flex h-screen bg-gray-100">
+  template: `<div class="flex h-screen bg-gray-200">
     @if(isDesktop) {
 
     <app-sidebar />
