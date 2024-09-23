@@ -38,7 +38,7 @@ import { ShortlistedCV } from '../types';
         <app-skill-dots [count]="data.skillRating"></app-skill-dots>
       </div>
       <button
-        class="bg-gradient-to-br from-blue-500 to-blue-700 text-white rounded-xl text-nowrap flex items-center justify-center p-2 space-x-2 h-12 w-[30%] flex-shrink-0"
+        class="bg-gradient-to-br from-blue-500 to-blue-700 text-white rounded-xl text-nowrap flex items-center justify-center p-2 space-x-2 h-12 w-[30%] flex-shrink-0 px-5"
       >
         <lucide-angular [img]="icons.Download" class="my-icon"></lucide-angular>
         <span class="text-sm">Download for 30 credits</span>
