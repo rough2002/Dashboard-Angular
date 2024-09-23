@@ -22,7 +22,7 @@ import { LucideAngularModule, Menu } from 'lucide-angular';
       @if(!isDesktop){
       <button
         (click)="toggleSidebar.emit()"
-        class="bg-white h-12 w-12 flex justify-center items-center rounded"
+        class="bg-white h-10 w-10 flex justify-center items-center rounded"
       >
         <lucide-angular [img]="icons.Menu" class="my-icon"></lucide-angular>
       </button>
