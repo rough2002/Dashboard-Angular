@@ -7,9 +7,9 @@ import { Component, ViewEncapsulation } from '@angular/core';
   encapsulation: ViewEncapsulation.None,
   template: `
     <div class="flex gap-2 items-center">
-      <span class="">
-        <p class="font-semibold text-base">Hi , Robert</p>
-        <p class="text-blue-600 font-bold">Credits left: 300</p>
+      <span class="flex flex-col items-end">
+        <p class="text-lg font-semibold">Hi , Robert</p>
+        <p class="text-blue-600 font-medium text-sm">Credits left: 300</p>
       </span>
       <img
         src="https://randomuser.me/api/portraits/men/10.jpg"
