@@ -41,7 +41,7 @@ import { ShortlistedCV } from '../types';
         class="bg-gradient-to-br from-blue-500 to-blue-700 text-white rounded-xl text-nowrap flex items-center justify-center p-2 space-x-2 h-12 w-[30%] flex-shrink-0 px-5"
       >
         <lucide-angular [img]="icons.Download" class="my-icon"></lucide-angular>
-        <span class="text-sm md:text-sm">Download for 30 credits</span>
+        <span class="text-sm md:text-xs">Download for 30 credits</span>
       </button>
       <button
         class="rounded w-4 h-4 flex-shrink-0 bg-blue-700 text-white flex items-center justify-center"
