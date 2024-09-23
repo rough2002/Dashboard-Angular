@@ -1,1 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* styles.css */
+
+/* Apply the font globally */
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #bcb9b9;
+  border-radius: 8px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.active {
+  color: #3b82f6;
+  border-right: 8px;
+  border-color: #3b82f6;
+}
