@@ -1,6 +1,7 @@
 import { Component, Input, ViewEncapsulation } from '@angular/core';
 import { Download, LucideAngularModule } from 'lucide-angular'; // Ensure you have lucide-angular installed
 import { SkillDotsComponent } from './skillDots.component';
+import { PersonData } from '../types';
 
 @Component({
   selector: 'app-short-list-cv-row',
@@ -79,7 +80,7 @@ import { SkillDotsComponent } from './skillDots.component';
   `,
 })
 export class ShortListCvRowComponent {
-  @Input() data: any; // temporary
+  @Input() data!: PersonData;
   icons = {
     Download,
   };
