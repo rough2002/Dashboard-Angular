@@ -21,7 +21,7 @@ import { navlinks } from '../../shared/utils/navlinks';
         <a
           [routerLink]="navlink.slug"
           routerLinkActive="active"
-          class="flex items-center space-x-6 px-2 py-2 rounded-lg font-medium text-gray-700 hover:text-blue-500"
+          class="flex items-center space-x-6 px-2 py-2 rounded font-medium text-gray-700 hover:text-blue-500"
           [routerLinkActiveOptions]="{ exact: true }"
         >
           <!-- {navlink.icon} -->

@@ -8,7 +8,7 @@ import { CheckboxComponent } from '../../../shared/components/checkbox.component
   imports: [ShortListCvRowComponent, CheckboxComponent],
   encapsulation: ViewEncapsulation.None,
   template: `
-    <div class="h-[75vh] overflow-y-scroll space-y-4">
+    <div class="h-[75vh] overflow-y-scroll space-y-3 w-full">
       @for (data of dummyData ; track data.id) {
       <div class="flex items-center space-x-4 ">
         <checkbox />

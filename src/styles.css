@@ -28,6 +28,6 @@ body {
 
 .active {
   color: #3b82f6;
-  border-right: 8px;
+  border-right: 8px solid;
   border-color: #3b82f6;
 }

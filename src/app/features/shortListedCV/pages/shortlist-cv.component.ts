@@ -8,7 +8,7 @@ import { ShortListCvTableComponent } from '../components/shortlist-cv-table.comp
   encapsulation: ViewEncapsulation.None,
   template: `
     <div class="">
-      <h1 class="text-3xl font-semibold mb-4">Create Purchase History</h1>
+      <h1 class="text-3xl font-semibold mb-6">Shortlisted CV's</h1>
       <app-short-list-cv-table />
     </div>
   `,

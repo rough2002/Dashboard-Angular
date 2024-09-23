@@ -8,9 +8,9 @@ import { Component, Input, ViewEncapsulation } from '@angular/core';
     <div class="flex space-x-1 justify-start">
       @for (dot of [].constructor(count) ;let i = $index ;track i) {
       <div
-        class="flex items-center justify-center w-8 h-8 bg-blue-500 rounded-full"
+        class="flex items-center justify-center w-6 h-6 bg-blue-500 rounded-full"
       >
-        <div class="w-4 h-4 bg-white"></div>
+        <div class="w-3 h-3 bg-white"></div>
       </div>
       }
     </div>

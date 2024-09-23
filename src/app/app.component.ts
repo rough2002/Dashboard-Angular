@@ -22,11 +22,12 @@ import { CollapsibleSidebarComponent } from './core/components/collapsible-sideb
     <app-collapsible-sidebar
       [isDesktop]="isDesktop"
       [sidebarOpen]="sidebarOpen"
+      (toggleSidebar)="toggleSidebar()"
     />
     }
     <div class="flex flex-col flex-1 overflow-hidden">
       <app-header [isDesktop]="isDesktop" (toggleSidebar)="toggleSidebar()" />
-      <main class="flex-1 bg-gray-100 p-6">
+      <main class="flex-1 bg-gray-200 p-6">
         <router-outlet />
       </main>
     </div>
@@ -43,7 +44,6 @@ export class AppComponent {
 
   // Function to check screen size and set `isDesktop` accordingly
   checkScreenSize() {
-    console.log('hello');
     this.isDesktop = window.innerWidth >= 1024;
     if (this.isDesktop) {
       this.sidebarOpen = false; // Close sidebar automatically if on desktop
@@ -54,14 +54,7 @@ export class AppComponent {
     this.sidebarOpen = !this.sidebarOpen;
   }
 
-  // Close the sidebar when navigating routes (useful for mobile)
-  closeSidebar() {
-    if (!this.isDesktop) {
-      this.sidebarOpen = false;
-    }
-  }
-
-  // Cleanup on component destroy
+  // on Unmount
   ngOnDestroy() {
     window.removeEventListener('resize', this.checkScreenSize.bind(this));
   }
