@@ -7,7 +7,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
   template: `<input
     type="checkbox"
     [checked]="false"
-    class="form-checkbox h-4 w-4 text-blue-600 border-gray-300 rounded-md"
+    class="form-checkbox h-6 w-6 text-blue-600 border-gray-300 rounded-md"
   />`,
 })
 export class CheckboxComponent {
